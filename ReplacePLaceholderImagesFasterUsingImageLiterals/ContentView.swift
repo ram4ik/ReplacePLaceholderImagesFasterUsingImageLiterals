@@ -29,8 +29,9 @@ struct ContentView: View {
                             .frame(width: 80, height: 160)
                             .foregroundColor(Color.blue)
                         VStack(spacing: 10) {
-                            Image(systemName: "person") // Elen
+                            Image(uiImage: #imageLiteral(resourceName: "Elen")) // Elen
                                 .resizable()
+                                .scaledToFill()
                                 .scaleEffect(1)
                                 .frame(width: 60, height: 60)
                                 .clipShape(Circle())
@@ -43,8 +44,9 @@ struct ContentView: View {
                             .frame(width: 80, height: 160/2)
                             .foregroundColor(Color.blue)
                         VStack(spacing: 10) {
-                            Image(systemName: "person") // Judy
+                            Image(uiImage: #imageLiteral(resourceName: "Judy")) // Judy
                                 .resizable()
+                                .scaledToFill()
                                 .scaleEffect(1)
                                 .frame(width: 60, height: 60)
                                 .clipShape(Circle())
@@ -57,8 +59,9 @@ struct ContentView: View {
                             .frame(width: 80, height: 160 / 10 * 7)
                             .foregroundColor(Color.blue)
                         VStack(spacing: 10) {
-                            Image(systemName: "person") // Laura
+                            Image(uiImage: #imageLiteral(resourceName: "Laura")) // Laura
                                 .resizable()
+                                .scaledToFill()
                                 .scaleEffect(1)
                                 .frame(width: 60, height: 60)
                                 .clipShape(Circle())
@@ -71,8 +74,9 @@ struct ContentView: View {
                             .frame(width: 80, height: 160 / 10 * 9)
                             .foregroundColor(Color.blue)
                         VStack(spacing: 10) {
-                            Image(systemName: "person") // Meggan
+                            Image(uiImage: #imageLiteral(resourceName: "Meggan")) // Meggan
                                 .resizable()
+                                .scaledToFill()
                                 .scaleEffect(1)
                                 .frame(width: 60, height: 60)
                                 .clipShape(Circle())
