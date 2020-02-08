@@ -10,7 +10,78 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        ZStack {
+            Divider()
+                .offset(y: 83)
+            VStack(spacing: 20) {
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("Delegates * 24 DELEGATES DECLARED")
+                        .fontWeight(.bold)
+                    
+                    Text("1 990 delegates needed to win the nomination")
+                }
+                
+                // uiImage: Image Literal
+                HStack(alignment: .bottom, spacing: 20) {
+                    VStack {
+                        Text("10")
+                        Rectangle()
+                            .frame(width: 80, height: 160)
+                            .foregroundColor(Color.blue)
+                        VStack(spacing: 10) {
+                            Image(systemName: "person") // Elen
+                                .resizable()
+                                .scaleEffect(1)
+                                .frame(width: 60, height: 60)
+                                .clipShape(Circle())
+                            Text("Elen")
+                        }
+                    }
+                    VStack {
+                        Text("5")
+                        Rectangle()
+                            .frame(width: 80, height: 160/2)
+                            .foregroundColor(Color.blue)
+                        VStack(spacing: 10) {
+                            Image(systemName: "person") // Judy
+                                .resizable()
+                                .scaleEffect(1)
+                                .frame(width: 60, height: 60)
+                                .clipShape(Circle())
+                            Text("Judy")
+                        }
+                    }
+                    VStack {
+                        Text("7")
+                        Rectangle()
+                            .frame(width: 80, height: 160 / 10 * 7)
+                            .foregroundColor(Color.blue)
+                        VStack(spacing: 10) {
+                            Image(systemName: "person") // Laura
+                                .resizable()
+                                .scaleEffect(1)
+                                .frame(width: 60, height: 60)
+                                .clipShape(Circle())
+                            Text("Laura")
+                        }
+                    }
+                    VStack {
+                        Text("9")
+                        Rectangle()
+                            .frame(width: 80, height: 160 / 10 * 9)
+                            .foregroundColor(Color.blue)
+                        VStack(spacing: 10) {
+                            Image(systemName: "person") // Meggan
+                                .resizable()
+                                .scaleEffect(1)
+                                .frame(width: 60, height: 60)
+                                .clipShape(Circle())
+                            Text("Meggan")
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
